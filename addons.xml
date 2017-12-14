@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?> 
+<addons>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.BadWolf" name="BadWolf Repository" version="1.0.1" provider-name="Wardoctor">
+	<extension point="xbmc.addon.repository" name="BadWolf Repository">
+		<info compressed="false">https://raw.githubusercontent.com/TheWardoctor/BadWolf/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/TheWardoctor/BadWolf/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/TheWardoctor/BadWolf/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>BadWolf Repository, don't like it? Go away, problem solved.</summary>
+		<description></description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.Tardisrepo" name="Tardis Repository" version="1.5" provider-name="The Tenth Doctor">
+	<extension point="xbmc.addon.repository" name="Tardis Repository">
+		<info compressed="false">https://raw.githubusercontent.com/tardisbuilds/Tardisbuilds-Repository/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/tardisbuilds/Tardisbuilds-Repository/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/tardisbuilds/Tardisbuilds-Repository/master</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary></summary>
+		<description></description>
+		<platform>all</platform>
+	</extension>
+</addon>
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.program.sgs.notifications" version="1.0.2"
+       name="Stargate Notify" provider-name="SGS">
+  <requires>
+  	<import addon="xbmc.python" version="2.1.0"/>
+  	<import addon="script.module.addon.common" optional="true" />
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+  	<summary>SGS News</summary>
+  	<description>Receive Important SGS Notifications. Unsubscribe within Add-on Settings.</description>
+  	<disclaimer>We take no responsibility for any problems this plugin might in any way, form, shape or size cause.</disclaimer>
+  	<language>en</language>
+  	<platform>all</platform>
+  	<forum>buildscommunity.info</forum>
+  	<website>-</website>
+  	<source></source>
+  	<email></email>
+  </extension>
+</addon>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.stargate-streams" version="2.0.9" name="Stargate Streams" provider-name="Wardoctor">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+		<import addon="plugin.program.sgs.notifications" version="1.0.2" />        
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Stargate Streams</summary>
+        <description>Stargate Streams</description>
+        <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+        <source></source>
+        <email></email>
+    </extension>
+</addon>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.stargate.guide" name="Stargate Guide"
+version="1.0.8" provider-name="Wardoctor">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.simplejson" version="3.3.0"/>
+        <import addon="script.module.requests" version="2.9.1" />
+        <import addon="script.module.dateutil" version="2.4.2" />
+        <import addon="script.module.pil" />
+        <import addon="script.module.beautifulsoup4" />
+    </requires>
+    <extension point="xbmc.python.script" library="addon.py">
+            <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="login"/>
+    <extension point="xbmc.addon.metadata">
+        <description lang="en">TV Guide especially for Stargate Streams. Based on Fullscreen TV Guide with major contributions from: primaeval, iainmacleod, im85288, RayW1986, bluezed, andy, Zomboided, tycoo, kjb86.</description>
+        <disclaimer lang="en">Based on the original TV Guide addon by twinther, FTV Guide and Midraal's fork.</disclaimer>
+        <language></language>
+        <platform>all</platform>
+        <license>GPLv2</license>
+        <forum></forum>
+        <source></source>
+        <website></website>
+        <email></email>
+        <news>
+        </news>
+    </extension>
+</addon>
+</addons> 

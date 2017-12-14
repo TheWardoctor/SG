@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.BadWolf" name="BadWolf Repository" version="1.0.1" provider-name="Wardoctor">
+	<extension point="xbmc.addon.repository" name="BadWolf Repository">
+		<info compressed="false">https://raw.githubusercontent.com/TheWardoctor/BadWolf/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/TheWardoctor/BadWolf/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/TheWardoctor/BadWolf/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>BadWolf Repository, don't like it? Go away, problem solved.</summary>
+		<description></description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
